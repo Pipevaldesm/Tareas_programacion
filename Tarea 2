@@ -1,0 +1,9 @@
+# Ejercicio 1
+
+lista = [1, 2, 25, -1, 10]
+print('La lista:', lista)
+
+#2
+listafruit = ['manzana', 'platano', 'cereza']
+print('El primer elemento de mi lista de frutas es:', listafruit[0])
+print('El ultimo elemento de mi lista es:', listafruit[2])
