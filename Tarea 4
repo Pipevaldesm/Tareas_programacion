@@ -1,0 +1,22 @@
+#Ejercicio 1
+invite = set()
+invite.add('Jose')
+invite.add('Benjamin')
+invite.add('Juan')
+invite.add('Francisca')
+invite.add('Felipe')
+invite.add('Marcelo')
+
+print('Lista de invitados:')
+for invit in invite:
+    print(invit)
+    
+
+
+#Ejercicio 2
+
+punto = (9, 5)
+
+x = punto[0]
+y = punto[1]
+print(f'Las coordenadas del punto son x = {x}, y = {y}')
