@@ -1,0 +1,34 @@
+#Ejercicio 1
+ 
+word = input('Ingrese una palabra para analizar si es un palindromo')
+word = word.replace(' ','').lower()
+if word == word[::-1]:
+    print('Correcto, es un palindromo')
+else:
+    print('Incorrecto, no es un palindromo')
+
+#Ejercicio 2
+
+chain = input('Ingrese una chain para contar vocales')
+chain =  chain.lower()
+count1 = chain.count('a')
+count2 = chain.count('e')
+count3 = chain.count('i')
+count4 = chain.count('o')
+count5 = chain.count('u')
+
+print("Resultados!")
+print(f'a: {count1}')
+print(f'e: {count2}')
+print(f'i: {count3}')
+print(f'o: {count4}')
+print(f'u: {count5}')
+
+#Ejercicio 3
+import string
+import random
+
+lenght = int(input('Ingrese el largo de la contrasena'))
+caracteres = string.ascii_letters + string.digits + string.punctuation
+create_password = ''.join(random.choice(caracteres) for _ in range(lenght))
+print('La contrasena generada es:', create_password)
