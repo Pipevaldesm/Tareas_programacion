@@ -1,0 +1,16 @@
+#Ejercicio 1
+
+with open('datos.txt', 'w') as archivo:
+    with open('datos.txt', 'a') as archivo:
+        archivo.write('soy un genio')
+
+#Ejercicio 2
+with open('ejemplo.txt', 'r') as archivo:
+    content =  archivo.read()
+print('Contenido del archivo:', content)
+
+print('\nPrimeras tres lineas del archivo')
+archivo.seek(0)
+for _ in range(3):
+    linea = archivo.readline()
+    print(linea.strip())
